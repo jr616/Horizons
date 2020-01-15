@@ -57,7 +57,7 @@
 	color:#d5d5d5;
 }
 #myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
-#myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
+#myCarousel .carousel-item a:hover{background:#f4623a; text-decoration:none;  }
 
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
 #myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;}
@@ -219,6 +219,140 @@
 }
 </style>
 
+<style>
+.pb-100 {
+	padding-bottom: 100px;
+}
+.pt-100 {
+	padding-top: 100px;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.section-title {
+	position: relative;
+}
+.section-title p {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+.section-title h4 {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+.section-title h4::before {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 2px;
+	background-color: #d8d8d8;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4::after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #FF7200;
+	left: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+.contact {
+	background-image: url("https://mk0shawfielddoogk0um.kinstacdn.com/wp-content/uploads/deanta-seville-clear-glazed-slanted-prefinished-oak-interior-door-1080x1080.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+.contact-form input,
+textarea {
+	width: 100%;
+	border: 1px solid #555;
+	padding: 5px 10px;
+	text-transform: capitalize;
+	margin-top: 15px;
+	background-color: transparent;
+	color: #fff;
+}
+.contact:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #333;
+	z-index: -1;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+.single-contact {
+	text-align: left;
+	position: relative;
+	padding-left: 70px;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.single-contact i.fa {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	background-color: #FF7200;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 3px;
+}
+.single-contact h5 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.single-contact p {
+	font-size: 15px;
+	font-weight: 400;
+}
+.contact-form input[type="submit"] {
+	background-color: #FF7200;
+	border: 0px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+.contact-form input[type="submit"]:hover {
+	background-color: #CC5B00
+}
+.contact-form input:focus, textarea:focus {
+	border-color: #CC5B00
+}
+</style>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </head>
 
@@ -262,7 +396,7 @@
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Introducing the all new Stop and Lock, an quick and damage free solution for all your locking needs</p>
+          <p class="text-white-75 font-weight-light mb-5">Brought to you by team 'Bob the Builder'</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -276,7 +410,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-center mt-0">We've got what you need!</h2>
           <hr class="divider my-4">
-          <p class="text-muted mb-0">Introducing the all new Stop and Lock, an quick and damage free solution for all your locking needs</p>
+          <p class="text-muted mb-0">Introducing the all new Stop and Lock, a quick and damage free solution for all your locking needs</p>
         </div>
       </div>
     </div>
@@ -380,34 +514,77 @@
 
 
   <!-- Contact Section -->
-  <section class="page-section bg-primary" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">Let's Get In Touch!</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x text-white-50 mb-4"></i>
-          <div class="text-white mt-0">07786 693 383</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x text-white-50 mb-4"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block text-white mt-0" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
+  <body>
+      <section class="contact pt-100 pb-100" id="contact">
+           <div class="container">
+              <div class="row">
+                 <div class="col-xl-6 mx-auto text-center">
+                    <div class="section-title mb-100">
+                       <h4>Contact Us</h4>
+                    </div>
+                 </div>
+              </div>
+              <div class="row text-center">
+                    <div class="col-md-8">
+                       <form action="#" class="contact-form">
+                          <div class="row">
+                             <div class="col-xl-6">
+                                <input type="text" placeholder="name">
+                             </div>
+                             <div class="col-xl-6">
+                                <input type="text" placeholder="email">
+                             </div>
+                             <div class="col-xl-6">
+                                <input type="text" placeholder="subject">
+                             </div>
+                             <div class="col-xl-6">
+                                <input type="text" placeholder="telephone">
+                             </div>
+                             <div class="col-xl-12">
+                                <textarea placeholder="message" cols="30" rows="10"></textarea>
+                                <input type="submit" value="send message">
+                             </div>
+                          </div>
+                       </form>
+                    </div>
+                    <div class="col-md-4">
+                       <div class="single-contact">
+                          <i class="fa fa-map-marker"></i>
+                          <h5>Address</h5>
+                          <p>The Invention Rooms, Imperial College London, White City</p>
+                       </div>
+                       <div class="single-contact">
+                          <i class="fa fa-phone"></i>
+                          <h5>Phone</h5>
+                          <p>(+44) 7786 93383</p>
+                       </div>
+                       <div class="single-contact">
+                          <i class="fa fa-envelope"></i>
+                          <h5>Email</h5>
+                          <p>jr616@ic.ac.uk</p>
+                       </div>
+                    </div>
+              </div>
+           </div>
+        </section>
 
 
   <!-- Page Content -->
   <section class="page-section" id="Team">
   <div class="container">
+
+    <div class="row justify-content-center">
+        <h2 class="text-center mt-0">Meet team Bob the Builder!</h2>
+        <hr class="divider my-4">
+    <div/>
+
+
     <div class="row">
+
+
 
       <!-- Team Member 1 -->
       <div class="col-xl-3 col-md-6 mb-4">
@@ -416,6 +593,11 @@
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Jake Reynolds</h5>
             <div class="card-text text-black-50">Project Manager</div>
+              <hr class="divider light my-4">
+              <div class="card-text text-black-50">Master's of Mechanical Engineering student at Imperial College London</div>
+                  <hr class="divider light my-4">
+              <div class="card-text text-black-50">Experiance at Dyson, Martin-Baker and Lotus F1 </div>
+                  <hr class="divider light my-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/1jnr1">
@@ -437,7 +619,12 @@
           <img src="https://media.licdn.com/dms/image/C5603AQG02LPQpQERqw/profile-displayphoto-shrink_800_800/0?e=1583366400&v=beta&t=y8ZLiRiYQ3Lnhoxc6KEL7g-Lxop7YCgTgTcusVERe08" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Mina Oba</h5>
-            <div class="card-text text-black-50">Web Developer</div>
+            <div class="card-text text-black-50">Lead Designer</div>
+                      <hr class="divider light my-4">
+            <div class="card-text text-black-50">Master's of Mechanical Engineering student at Imperial College London</div>
+            <hr class="divider light my-4">
+            <div class="card-text text-black-50">Experiance in robotics and with start-ups </div>
+              <hr class="divider light my-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/mina.oba.1">
@@ -459,7 +646,12 @@
           <img src="https://media.licdn.com/dms/image/C5603AQF2gOoYFFqIkA/profile-displayphoto-shrink_800_800/0?e=1583366400&v=beta&t=v84wOS2mxDZpW2pLIsd4lzeftt2Rob3KaZYUdx6Z8Ts" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Lorenzo Bergamaschi</h5>
-            <div class="card-text text-black-50">Web Developer</div>
+            <div class="card-text text-black-50">Lead Mechanical Engineer</div>
+              <hr class="divider light my-4">
+            <div class="card-text text-black-50">Master's of Mechanical Engineering student at Imperial College London</div>
+          <hr class="divider light my-4">
+            <div class="card-text text-black-50">Experiance with Shell and automotive engineering</div>
+                    <hr class="divider light my-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/lorenzo.bergamaschi.925">
@@ -481,7 +673,12 @@
           <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t31.0-8/s960x960/14711261_906789942788104_8670414348359238587_o.jpg?_nc_cat=107&_nc_ohc=3HtSZ3AcnmcAX-W_mUY&_nc_ht=scontent-lhr8-1.xx&_nc_tp=1002&oh=9a8764d1514ab058c7ef064ec918eb98&oe=5E9C9929" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Priyen Morjaria</h5>
-            <div class="card-text text-black-50">Web Developer</div
+            <div class="card-text text-black-50">Lead Prototyping Engineer</div>
+               <hr class="divider light my-4">
+              <div class="card-text text-black-50">Design Engineering student at Imperial College London</div>
+                    <hr class="divider light my-4">
+              <div class="card-text text-black-50">Experiance with prototyping</div>
+                        <hr class="divider light my-4">
               <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/priyen.morjaria">
